@@ -16,67 +16,78 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <h1 class="header-top">Book Cook Family</h1>
-    <nav>
-      <ul class="nav-item">
-        <li><a class="nav-item__btn" href="#">Accueil</a></li>
-        <li><a class="nav-item__btn" href="#">Recette</a></li>
-        <li> <a class="nav-item__btn" href="#">Recherche</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- main -->
-  <main class="container">
-    <article class="recipe">
-      <h2 class="recipe__title">Sable à la canelle :</h2>
-      <section class="recipe__ingredients">
-        <h3 class="recipe__ingredients--title">Ingrédients :</h3>
-        <!-- Faire un tableau en JS -->
-        <ol class="recipe__ingredients--list">
-          <li><input type="checkbox" />
-            <label for="">1 Oeuf</label>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1 class="header-top">CookBook Family</h1>
+      <nav>
+        <ul class="nav-item">
+          <li><a class="nav-item__link" href="#">Accueil</a></li>
+          <li><a class="nav-item__link" href="#">Apéros</a></li>
+          <li><a class="nav-item__link" href="#">Entrées</a></li>
+          <li><a class="nav-item__link" href="#">Plats</a></li>
+          <li><a class="nav-item__link" href="#">Desserts</a></li>
+          <li>
+            <form class="nav-item__search" role="search" method="">
+              <input id="nav-item__search--input" name="search" type="search" placeholder="Rechercher" />
+              <button class="nav-item__search--btn"><img src="/img/search.png" alt="loupe recherce"></button>
+            </form>
           </li>
-          <li><input type="checkbox" />
-            <label for="">125g Sucre en poudre</label>
-          </li>
-          <li><input type="checkbox" />
-            <label for="">290g Farine</label>
-          </li>
-          <li><input type="checkbox" />
-            <label for="">125g Beurre</label>
-          </li>
-          <li><input type="checkbox" />
-            <label for="">1 c.s Extrait de vanille</label>
-          </li>
-          <li><input type="checkbox" />
-            <label for="">1 c.s Canelle</label>
-          </li>
-          <li><input type="checkbox" />
-            <label for="">1 c.s Miel</label>
-          </li>
-        </ol>
-      </section>
-      <section class="recipe__preparation">
-        <h3 class="recipe__preparation--title">Préparation de la recette :</h3>
-        <h4 class="recipe__preparation--nombre">Pour environ 40 biscuits:</h4>
-        <div class="recipe__preparation--step">
-          <p>Mélangez au fouet l'oeuf et le sucre dans un saladier jusqu'à ce que le mélange blanchisse.</p>
-          <p>Ajoutez le reste des ingrédients et mélangez le tout avec vos mains.</p>
-          <p>Formez une boule avec la pate et laissez la reposer minimum 30 minutes au frigo.</p>
-          <p>Préchauffez le four à 180°C</p>
-          <p>Etalez la pâte sur 0.5cm sur un plan de travail fariné et découpez des formes à l'aide d'emporte-pièces</p>
-          <p>Déposez les biscuits sur une plaque recouverte de papier sulfurisé et enfournez durant 10 minutes.</p>
-          <p>Laissez les refroidir et amusez vous à les décorer</p>
-        </div>
-      </section>
-    </article>
-  </main>
-  <!-- footer -->
-  <footer class="footer">
-    2023 &copy; Tous droits réservés
-  </footer>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main_container">
+      <article class="recipe">
+        <h2 class="recipe__title">Sablés à la canelle :</h2>
+        <section class="recipe__ingredients">
+          <h3 class="recipe__ingredients--title">Ingrédients :</h3>
+          <!-- Faire un tableau en JS -->
+          <ol class="recipe__ingredients--list">
+            <li><input type="checkbox" />
+              <label for="">1 Oeuf</label>
+            </li>
+            <li><input type="checkbox" />
+              <label for="">125g Sucre en poudre</label>
+            </li>
+            <li><input type="checkbox" />
+              <label for="">290g Farine</label>
+            </li>
+            <li><input type="checkbox" />
+              <label for="">125g Beurre</label>
+            </li>
+            <li><input type="checkbox" />
+              <label for="">1 c.s Extrait de vanille</label>
+            </li>
+            <li><input type="checkbox" />
+              <label for="">1 c.s Canelle</label>
+            </li>
+            <li><input type="checkbox" />
+              <label for="">1 c.s Miel</label>
+            </li>
+          </ol>
+        </section>
+        <section class="recipe__preparation">
+          <h3 class="recipe__preparation--title">Préparation de la recette :</h3>
+          <h4 class="recipe__preparation--nombre">Pour environ 40 biscuits:</h4>
+          <div class="recipe__preparation--step">
+            <p>Mélangez au fouet l'oeuf et le sucre dans un saladier jusqu'à ce que le mélange blanchisse.</p>
+            <p>Ajoutez le reste des ingrédients et mélangez le tout avec vos mains.</p>
+            <p>Formez une boule avec la pate et laissez la reposer minimum 30 minutes au frigo.</p>
+            <p>Préchauffez le four à 180°C</p>
+            <p>Etalez la pâte sur 0.5cm sur un plan de travail fariné et découpez des formes à l'aide d'emporte-pièces
+            </p>
+            <p>Déposez les biscuits sur une plaque recouverte de papier sulfurisé et enfournez durant 10 minutes.</p>
+            <p>Laissez les refroidir et amusez vous à les décorer</p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      2023 &copy; Tous droits réservés
+    </footer>
+  </div>
 </body>
 
 </html>
